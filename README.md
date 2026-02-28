@@ -101,6 +101,9 @@ python evs_pcap_parser.py -i input.pcap -o output.cod -c 2 -d --rich --save-mult
 The script itself is not enough to produce PCM, to convert `COD` to PCM you can use `EVS_dec` provided by [3GPP](https://www.3gpp.org/ftp/Specs/archive/26_series/26.443).
 For example:
 
+Note:
+The code for `EVS_dec` is provided on [3GPP](https://www.3gpp.org/ftp/Specs/archive/26_series/26.443/26443-j00.zip) (zip) or on [github in the wanglihe repo](https://github.com/wanglihe/3gpp-evs/tree/master).
+
 ```bash
 ./EVS_dec -mime -no_delay_cmp 48 input.cod output.pcm
 ```
